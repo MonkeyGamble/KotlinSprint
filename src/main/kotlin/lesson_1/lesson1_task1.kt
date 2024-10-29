@@ -1,6 +1,6 @@
 package lesson_1
 
 fun main(){
-    println("Тестовое решение")
-    println("Какие-то доработки")
+    val ordersCount: Int = 75
+    val thanksForOrder: String = "Thank you for the order!"
 }
