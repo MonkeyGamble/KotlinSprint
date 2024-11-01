@@ -6,17 +6,6 @@ fun main() {
     val travelTime: Int = 457
     val magicNumber: Int = 60
 
-//    val travelHours: Int = travelTime / magicNumber
-//    val travelMinutes: Int = travelTime % magicNumber
-//
-//    var arrivalHours: Int = departureHours + travelHours
-//    var arrivalMinutes: Int = departureMinutes + travelMinutes
-//
-//    if (arrivalMinutes > 59) {
-//        arrivalHours += arrivalMinutes / 60
-//        arrivalMinutes %= 60
-//    }
-
     val totalMinutesFromDayStart = departureHours * magicNumber + departureMinutes + travelTime
 
     val arrivalHours = (totalMinutesFromDayStart / magicNumber) % 24
