@@ -3,11 +3,13 @@ package lesson_3
 fun main() {
     var greeting: String
     val customerName: String = "Константин"
+    val morning: String = "Добрый день"
+    val evening: String = "Добрый вечер"
 
-    greeting = "Добрый день, $customerName!"
+    greeting = "$morning, $customerName!"
     println(greeting)
 
-    greeting = "Добрый вечер, $customerName!"
+    greeting = "$evening, $customerName!"
     println(greeting)
 }
 
