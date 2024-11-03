@@ -4,12 +4,13 @@ fun main() {
     val departureHours: Int = 9
     val departureMinutes: Int = 39
     val travelTime: Int = 457
-    val magicNumber: Int = 60
+    val secondsInMinute: Int = 60
+    val hoursInDay: Int = 24
 
-    val totalMinutesFromDayStart = departureHours * magicNumber + departureMinutes + travelTime
+    val totalMinutesFromDayStart = departureHours * secondsInMinute + departureMinutes + travelTime
 
-    val arrivalHours = (totalMinutesFromDayStart / magicNumber) % 24
-    val arrivalMinutes = totalMinutesFromDayStart % magicNumber
+    val arrivalHours = (totalMinutesFromDayStart / secondsInMinute) % hoursInDay
+    val arrivalMinutes = totalMinutesFromDayStart % secondsInMinute
 
     println("Время прибытия поезда: $arrivalHours:$arrivalMinutes")
 }
