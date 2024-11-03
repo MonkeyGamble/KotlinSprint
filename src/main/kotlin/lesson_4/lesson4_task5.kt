@@ -17,9 +17,14 @@ fun main() {
     val weatherIsGood = readln().toBoolean()
 
     val longTermVoyage: Boolean =
-        (shipIsDamaged == SHIP_IS_DAMAGED) && (shipCrew in SHIP_CREW_MIN..SHIP_CREW_MAX) && (boxesOfFood > BOXES_OF_FOOD) && (weatherIsGood == WEATHER_IS_GOOD)
+        (shipIsDamaged == SHIP_IS_DAMAGED)
+                && (shipCrew in SHIP_CREW_MIN..SHIP_CREW_MAX)
+                && (boxesOfFood > BOXES_OF_FOOD)
+                && (weatherIsGood == WEATHER_IS_GOOD)
     val shortTermVoyage: Boolean =
-        (shipCrew == 70) && (weatherIsGood == WEATHER_IS_GOOD) && (boxesOfFood >= BOXES_OF_FOOD)
+        (shipCrew == 70)
+                && (weatherIsGood == WEATHER_IS_GOOD)
+                && (boxesOfFood >= BOXES_OF_FOOD)
 
     if (longTermVoyage) {
         println("Корабль может отплыть в долгосрочное плавание")
