@@ -3,11 +3,6 @@ package lesson_3
 fun main() {
     val num = readln().toInt()
 
-//    for (i in 1..9) {
-//        val result = num * i
-//        println("$num x $i = $result")
-//    }
-
     println(
         """
         $num x 1 = ${num * 1}
