@@ -5,7 +5,8 @@ fun main() {
     var moveTo: String = "E4"
     var moveNumber: Int = 1
 
-    val move1 = "$moveFrom-$moveTo;$moveNumber"
+    val move1 = "[$moveFrom-$moveTo;${moveNumber}]"
+
 
     println(move1)
 
@@ -13,7 +14,7 @@ fun main() {
     moveTo = "D3"
     moveNumber++
 
-    val move2 = "$moveFrom-$moveTo;$moveNumber"
+    val move2 = "[$moveFrom-$moveTo;$moveNumber]"
     println(move2)
 
 }
