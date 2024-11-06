@@ -2,14 +2,15 @@ package lesson_3
 
 fun main() {
     val move: String = "D2-D4;0"
+    val movePars = move.split('-', ';')
 
-    val moveFrom: String = "${move[0]}${move[1]}"
+    val moveFrom = movePars[0]
     println(moveFrom)
 
-    val moveTo: String = "${move[3]}${move[4]}"
+    val moveTo = movePars[1]
     println(moveTo)
 
-    val moveNumber: Int = "${move[move.length - 1]}".toInt()
+    val moveNumber = movePars[2]
     println(moveNumber)
 }
 
