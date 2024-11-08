@@ -6,7 +6,12 @@ fun main() {
     val bookedTablesForToday: Int = 13
     val bookedTablesForTomorrow: Int = 9
 
-    println("Доступность столиков на сегодня: ${bookedTablesForToday < COUNT_OF_TABLES} \nДоступность столиков на завтра: ${bookedTablesForTomorrow < COUNT_OF_TABLES}")
+    println(
+        "Доступность столиков на сегодня: " +
+                "${bookedTablesForToday < COUNT_OF_TABLES}" +
+                " \nДоступность столиков на завтра:" +
+                " ${bookedTablesForTomorrow < COUNT_OF_TABLES}"
+    )
 }
 
 
