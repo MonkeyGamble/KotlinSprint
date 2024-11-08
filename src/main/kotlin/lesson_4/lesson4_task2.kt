@@ -1,19 +1,36 @@
 package lesson_4
 
+const val AVERAGE_LOW_WEIGHT = 35
+const val AVERAGE_HIGH_WEIGHT = 100
+const val AVERAGE_HIGH_VOLUME = 100
+
 fun main() {
-    val averageLowWeight = 35
-    val averageHighWeight = 100
-    val averageHighVolume = 100
 
     var weight = 20
     var volume = 80
 
-    println("Груз с весом $weight кг и объемом $volume л соответствует категории 'Average': ${weight > averageLowWeight && weight <= averageHighWeight && volume < averageHighVolume}")
+    println(
+        "Груз с весом $weight кг и объемом" +
+                " $volume л соответствует категории 'Average':" +
+                " ${
+                    weight > AVERAGE_LOW_WEIGHT
+                            && weight <= AVERAGE_HIGH_WEIGHT
+                            && volume < AVERAGE_HIGH_VOLUME
+                }"
+    )
 
     weight = 50
     volume = 100
 
-    println("Груз с весом $weight кг и объемом $volume л соответствует категории 'Average': ${weight > averageLowWeight && weight <= averageHighWeight && volume < averageHighVolume}")
+    println(
+        "Груз с весом $weight кг и объемом" +
+                " $volume л соответствует категории 'Average':" +
+                " ${
+                    weight > AVERAGE_LOW_WEIGHT
+                            && weight <= AVERAGE_HIGH_WEIGHT
+                            && volume < AVERAGE_HIGH_VOLUME
+                }"
+    )
 }
 
 
