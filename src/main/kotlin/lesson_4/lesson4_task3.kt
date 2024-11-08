@@ -11,7 +11,15 @@ fun main() {
     val humidityNow: Int = 20
     val seasonNow = "зима"
 
-    println("Благоприятные ли условия сейчас для роста бобовых? ${weatherTodayIsSunny == weatherIsSunny && tentIsOpenNow == tentIsOpen && humidityNow == humidity && seasonNow != currentSeason}")
+    println(
+        "Благоприятные ли условия сейчас для роста бобовых?" +
+                " ${
+                    weatherTodayIsSunny == weatherIsSunny
+                            && tentIsOpenNow == tentIsOpen
+                            && humidityNow == humidity
+                            && seasonNow != currentSeason
+                }"
+    )
 }
 
 
